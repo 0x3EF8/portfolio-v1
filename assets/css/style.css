@@ -1,20 +1,18 @@
-
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
   color: #fff;
   position: relative;
-  background: transparent;
 }
 
 body::before {
   content: "";
   position: fixed;
   background: #040404 url("../img/bg.png") top right no-repeat;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   left: 0;
   right: 0;
   top: 0;
@@ -51,15 +49,18 @@ body::before {
   font-family: "Poppins", sans-serif;
 }
 
-#header h1 a, #header h1 a:hover {
+#header h1 a,
+#header h1 a:hover {
   color: #fff;
   line-height: 1;
   display: inline-block;
 }
+
 a:hover {
   color: #00FFFF;
   text-decoration: none;
 }
+
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
@@ -103,19 +104,22 @@ a:hover {
 
 @media (max-width: 992px) {
   #header h1 {
-    font-size: 36px;
+      font-size: 36px;
   }
+
   #header h2 {
-    font-size: 20px;
-    line-height: 30px;
+      font-size: 20px;
+      line-height: 30px;
   }
+
   #header .social-links {
-    margin-top: 15px;
+      margin-top: 15px;
   }
+
   #header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
 }
 
@@ -136,7 +140,7 @@ a:hover {
   list-style: none;
 }
 
-.nav-menu li + li {
+.nav-menu li+li {
   margin-left: 30px;
 }
 
@@ -162,12 +166,16 @@ a:hover {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
+.nav-menu a:hover:before,
+.nav-menu li:hover>a:before,
+.nav-menu .active>a:before {
   visibility: visible;
   width: 25px;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
   color: #00FFFF;
   text-decoration: none;
 }
@@ -224,7 +232,9 @@ a:hover {
   outline: none;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+.mobile-nav a:hover,
+.mobile-nav .active>a,
+.mobile-nav li:hover>a {
   color: #00FFFF;
   text-decoration: none;
 }
@@ -265,7 +275,8 @@ a:hover {
   background: rgba(0, 0, 0, 0.9);
 }
 
-#header.header-top .social-links, #header.header-top h2 {
+#header.header-top .social-links,
+#header.header-top h2 {
   display: none;
 }
 
@@ -285,10 +296,11 @@ a:hover {
 
 @media (max-width: 768px) {
   #header.header-top {
-    height: 60px;
+      height: 60px;
   }
+
   #header.header-top h1 {
-    font-size: 26px;
+      font-size: 26px;
   }
 }
 
@@ -320,10 +332,11 @@ section .container {
 
 @media (max-width: 768px) {
   section {
-    top: 120px;
+      top: 120px;
   }
+
   section.section-show {
-    top: 80px;
+      top: 80px;
   }
 }
 
@@ -522,7 +535,8 @@ section .container {
   margin: 0 0 0 45px;
 }
 
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.25);
   font-size: 26px;
 }
@@ -551,7 +565,8 @@ section .container {
   z-index: 1;
 }
 
-.testimonials .owl-nav, .testimonials .owl-dots {
+.testimonials .owl-nav,
+.testimonials .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
@@ -571,7 +586,7 @@ section .container {
 
 @media (max-width: 767px) {
   .testimonials {
-    margin: 30px 10px;
+      margin: 30px 10px;
   }
 }
 
@@ -711,7 +726,8 @@ section .container {
   background: #64ffda;
 }
 
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p {
   color: #fff;
 }
 
@@ -721,10 +737,11 @@ section .container {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
-#Project { 
-  height: 220px; 
-  width: 900px; 
-  max-width:100%; 
+
+#Project {
+  height: 220px;
+  width: 900px;
+  max-width: 100%;
 }
 
 
@@ -752,7 +769,8 @@ section .container {
   border-radius: 4px;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   background: #64ffda;
 }
 
@@ -952,7 +970,7 @@ section .container {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -985,7 +1003,8 @@ section .container {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -995,31 +1014,37 @@ section .container {
   color: #fff;
 }
 
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
   background-color: rgba(255, 255, 255, 0.11);
 }
 
-.contact .php-email-form input::-webkit-input-placeholder, .contact .php-email-form textarea::-webkit-input-placeholder {
+.contact .php-email-form input::-webkit-input-placeholder,
+.contact .php-email-form textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
 
-.contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
+.contact .php-email-form input::-moz-placeholder,
+.contact .php-email-form textarea::-moz-placeholder {
   color: #00FFFF;
   opacity: 1;
 }
 
-.contact .php-email-form input:-ms-input-placeholder, .contact .php-email-form textarea:-ms-input-placeholder {
+.contact .php-email-form input:-ms-input-placeholder,
+.contact .php-email-form textarea:-ms-input-placeholder {
   color: rgba(19, 173, 220, 0.3);
   opacity: 1;
 }
 
-.contact .php-email-form input::-ms-input-placeholder, .contact .php-email-form textarea::-ms-input-placeholder {
+.contact .php-email-form input::-ms-input-placeholder,
+.contact .php-email-form textarea::-ms-input-placeholder {
   color: #00FFFF;
   opacity: 1;
 }
 
-.contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
   color: #00FFFF;
   opacity: 1;
 }
@@ -1048,19 +1073,21 @@ section .container {
 
 @-webkit-keyframes animate-loading {
   0% {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
+
   100% {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
 
 @keyframes animate-loading {
   0% {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
+
   100% {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
 
@@ -1089,7 +1116,8 @@ section .container {
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+.portfolio-details .portfolio-details-carousel .owl-nav,
+.portfolio-details .portfolio-details-carousel .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
@@ -1123,7 +1151,7 @@ section .container {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -1134,7 +1162,7 @@ section .container {
 
 @media (max-width: 992px) {
   .portfolio-details .portfolio-info {
-    padding-top: 20px;
+      padding-top: 20px;
   }
 }
 
@@ -1155,9 +1183,9 @@ section .container {
 
 @media (max-width: 992px) {
   .credits {
-    text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.8);
   }
 }
 
@@ -1184,11 +1212,13 @@ h1 {
   line-height: 1;
   color: transparent;
 }
+
 h1:focus {
   outline: none;
 }
 
-h1::before, h1::after {
+h1::before,
+h1::after {
   content: attr(data-heading);
   position: absolute;
   top: 0;
@@ -1198,38 +1228,42 @@ h1::before, h1::after {
 h1::before {
   color: cyan;
   -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%);
-          clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%);
 }
 
 h1::after {
   color: white;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
-          clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
+  clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
   -webkit-animation: slide 5s infinite;
-          animation: slide 5s infinite;
+  animation: slide 5s infinite;
 }
 
 @-webkit-keyframes slide {
   0% {
-    transform: translateX(0);
+      transform: translateX(0);
   }
+
   50% {
-    transform: translate(-20px, 2%);
+      transform: translate(-20px, 2%);
   }
 }
 
 @keyframes slide {
   0% {
-    transform: translateX(0);
+      transform: translateX(0);
   }
+
   50% {
-    transform: translate(-20px, 2%);
+      transform: translate(-20px, 2%);
   }
 }
+
 /*--------------------------------------------------------------
 # mouse effects
 --------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+
 bubles {
   border-radius: 100%;
   position: absolute;
@@ -1242,11 +1276,12 @@ bubles {
 
 @keyframes colorgen {
   0% {
-    opacity: 1;
-    filter: hue-rotate(0deg);
+      opacity: 1;
+      filter: hue-rotate(0deg);
   }
+
   100% {
-    opacity: 0;
-    filter: hue-rotate(270deg);
+      opacity: 0;
+      filter: hue-rotate(270deg);
   }
 }
