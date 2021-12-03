@@ -163,7 +163,7 @@
   });
 
 })(jQuery);
-/* lOGO */
+/* start typing effects */
 var theText = $(".typer").data("text"),
   theTextLength = theText.length,
   n = 0,
@@ -176,18 +176,19 @@ var theText = $(".typer").data("text"),
           clearInterval(theTyper);
       }
   }, 80);
-/* ending typing effect */
+/* ending typing effects */
 
-/* start Drop Letters */
+/* start logo effects */
+
 var h1 = document.querySelector("h1");
 
 h1.addEventListener("input", function() {
-  this.setAttribute("data-heading", this.innerText);
+    this.setAttribute("data-heading", this.innerText);
 });
 
+/* start logo effects */
 
-
-/* mouse effectst */
+/* start mouse effects */
 document.addEventListener('mousemove', e => {
 
   let bubles = document.createElement('bubles');
@@ -204,3 +205,31 @@ document.addEventListener('mousemove', e => {
       bubles.remove();
   }, 1100);
 });
+/*ending mouse effects */
+
+
+ // disable right click
+ document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+ document.onkeydown = function (e) {
+
+     // disable F12 key
+     if(e.keyCode == 123) {
+         return false;
+     }
+
+     // disable I key
+     if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+         return false;
+     }
+
+     // disable J key
+     if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+         return false;
+     }
+
+     // disable U key
+     if(e.ctrlKey && e.keyCode == 85) {
+         return false;
+     }
+ }
