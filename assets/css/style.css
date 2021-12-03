@@ -1266,7 +1266,7 @@ h1::after {
 
 bubles {
   border-radius: 100%;
-  position: absolute;
+   position: fixed;
   pointer-events: none;
   background: #20e3a2;
   box-shadow: 10px 10px 30px #31c8a2, -10px -10px 30px #31c8a2;
