@@ -1204,12 +1204,8 @@ section .container {
 --------------------------------------------------------------*/
 
 h1 {
-  text-align: center;
-  font-size: 14vw;
   position: relative;
-  font-weight: 900;
   text-transform: uppercase;
-  line-height: 1;
   color: transparent;
 }
 h1:focus {
@@ -1233,8 +1229,8 @@ h1::after {
   color: white;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
           clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
-  -webkit-animation: slide 5s infinite;
-          animation: slide 5s infinite;
+  -webkit-animation: slide 3s infinite;
+          animation: slide 3s infinite;
 }
 
 @-webkit-keyframes slide {
