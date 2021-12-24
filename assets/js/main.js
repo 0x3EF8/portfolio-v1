@@ -163,7 +163,7 @@
   });
 
 })(jQuery);
-// start typing effects 
+// Typing effects 
 var theText = $(".typer").data("text"),
   theTextLength = theText.length,
   n = 0,
@@ -178,7 +178,7 @@ var theText = $(".typer").data("text"),
   }, 80);
 
 
-// start logo effects 
+// Logo effects 
 
 var h1 = document.querySelector("h1");
 
@@ -188,7 +188,7 @@ h1.addEventListener("input", function() {
 
 
 
-// start mouse effects 
+// Mouse effects 
 document.addEventListener('mousemove', e => {
 
   let bubles = document.createElement('bubles');
@@ -208,7 +208,7 @@ document.addEventListener('mousemove', e => {
 
 
 
- // disable right click
+ // Disable right click
  document.addEventListener('contextmenu', event => event.preventDefault());
  
  document.onkeydown = function (e) {
