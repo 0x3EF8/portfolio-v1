@@ -1213,7 +1213,7 @@ h1:focus {
 }
 
 h1::before, h1::after {
-  content: attr(data-heading);
+  content: attr(name);
   position: absolute;
   top: 0;
   left: 0;
