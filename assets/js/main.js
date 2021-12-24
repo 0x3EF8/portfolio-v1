@@ -163,7 +163,7 @@
   });
 
 })(jQuery);
-/* start typing effects */
+// start typing effects 
 var theText = $(".typer").data("text"),
   theTextLength = theText.length,
   n = 0,
@@ -176,9 +176,9 @@ var theText = $(".typer").data("text"),
           clearInterval(theTyper);
       }
   }, 80);
-/* ending typing effects */
 
-/* start logo effects */
+
+// start logo effects 
 
 var h1 = document.querySelector("h1");
 
@@ -186,9 +186,9 @@ h1.addEventListener("input", function() {
     this.setAttribute("data-heading", this.innerText);
 });
 
-/* start logo effects */
 
-/* start mouse effects */
+
+// start mouse effects 
 document.addEventListener('mousemove', e => {
 
   let bubles = document.createElement('bubles');
@@ -205,7 +205,7 @@ document.addEventListener('mousemove', e => {
       bubles.remove();
   }, 1100);
 });
-/*ending mouse effects */
+
 
 
  // disable right click
